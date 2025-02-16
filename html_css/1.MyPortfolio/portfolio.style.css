@@ -1,0 +1,252 @@
+:root {
+
+    --BG_COLOR: #FF3030;
+    --TEXT_LIGHT: #FFFF;
+    --TEXT_DARK:#000000;
+
+}
+
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+html, body {
+
+    padding: 0px;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Aerial Narrow';
+    height: 100vh;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+
+body {
+
+    background-color: var(--BG_COLOR);
+    color: var(--TEXT_LIGHT);
+    padding: 0 40px 0 40px;
+}
+.active_link{
+    color:var(--BG_COLOR)
+}
+
+
+.header_section {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    >.navigation_items{
+      padding: 15px 20px;
+        position: absolute;
+        display: flex;
+        gap: 15px;
+        top:200px;
+        right:-65px;
+        width:auto;
+        height: 50px;
+        border-radius: 25px;
+        box-sizing: border-box;
+        background-color: var(--TEXT_LIGHT);
+        transform:rotate(90deg);
+        color: var(--TEXT_DARK);
+    }
+
+}
+.rounded_cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--TEXT_LIGHT);
+    >img{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.content_container {
+
+    display: flex;
+
+    width: 100%;
+
+    height: calc(100% - 80px);
+
+    >.left_container {
+
+        width:50%;
+
+       >.text_content {
+
+            height:70%;
+
+            display:flex;
+
+            flex-direction:column;
+
+            justify-content:center;
+
+            >h1 {
+
+                font-size:80px;
+            }
+
+            >p {
+                font-size:20px;
+                font-weight:500;
+            }
+        }
+
+        >.social_content {
+
+            height: 30%;
+
+            >h4{
+
+                margin-bottom: 10px;
+            }
+            >.social_ctas{
+
+            display: flex;
+
+            column-gap: 10px;
+
+            }
+        }
+
+    }
+
+
+    >.right_container {
+
+        width: 50%;
+
+        display: flex;
+
+        justify-content: center;
+       
+        >img{
+            height:100%;
+            width:auto;
+            background-color: #FF3030;
+            
+        }
+    }
+}
