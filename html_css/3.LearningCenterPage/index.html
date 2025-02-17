@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask me identity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- font-family: "Saira", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--header section-->
+    <header id="header" class="header_container flex">
+        <div class="w-1/3 flex items-center px-10">
+            <img class=" h-full" src="./assets/logo.png" alt="" />
+        </div>
+
+
+        <div class=" w-2/3 flex items-center justify-between">
+            <nav>
+                <ul class="flex gap-x-8">
+                    <li> Home </li>
+                    <li> About</li>
+                    <li> Courses</li>
+                    <li> Contact</li>
+
+                </ul>
+            </nav>
+
+            <div class="flex ">
+                <ul class="flex gap-x-4">
+                    <li><img src=./assets/cart.png alt="" /></li>
+                    <li><img src="./assets/person.png " alt="" /></li>
+                    <li> <img src="./assets/search.png " alt="" /></li>
+
+                </ul>
+
+            </div>
+
+            <div class="flex ">
+
+                <button class="h-full btn btn_1">Login</button>
+                <button class="h-full btn btn_2 gradient_bg"> Signup</button>
+
+
+            </div>
+        </div>
+    </header>
+
+    <!--hero section-->
+    <section id="hero" class="flex px-20 hero_section gradient_bg">
+        <div class="w-1/2 h-full flex flex-col content_container">
+            <p class="mb-5 font-thin">Successful coaches are visionaries</p>
+            <h1 class="mb-10  text-7xl">
+                Good <span>coaching</span> is good teaching & nothing else.</h1>
+
+
+            <div class="flex gap-x-8 mb-10">
+                <button class=" w-auto p-x-10 btn btn_3">View Courses</button>
+                <button class="w-auto btn btn_1 " style="color:#FFFF;">Get Free Consultation</button>
+            </div>
+
+            <div class="search_input flex gap-x-4">
+                <input class="w-2/3" placeholder="what do you want to learn today?" />
+                <button class="w-1/3 btn btn_2 gradient_bg"> search</button>
+
+            </div>
+        </div>
+
+        <div style="background-image: url('./assets/brunette-woman-hugging-laptop\ 1.png');"
+            class="w-1/2 mix-blend-multiply image_container">
+        </div>
+        <div class="image_blur blur-2xl"></div>
+
+
+    </section>
+    <!--Podcast section-->
+    <section class="gradient_bg w-full branding_section">
+        <div
+            class=" grid grid-cols-4 gap-4 sm:grid grid-cols-1 md:grid grid-cols-2 justify-center items-center px-20 h-full">
+            <img src="./assets/spodify.png" alt="'" />
+            <img src="./assets/amazon.png" alt="" />
+            <img src="./assets/cisco.png" alt="" />
+            <img src="./assets/logitechLink .png" alt="" />
+        </div>
+    </section>
+
+    <!--Featured Course section-->
+    <section class="feature_section  ">
+        <h1 class=" text-5xl text-center mb-10 ">Featured Course</h1>
+        <p class=" text-center text-md mb-100">THE FEATURE COURSES ARE WE INVENTED OUR TEACHING PART</p>
+        <div class=" product_container mb-30">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="product_card">
+                    <img src="assets/Mask group.png" alt="" />
+                    <div class="content">
+
+                        <div class="flex  justify-between mb-10">
+
+                            <p>1957 Students</p>
+                            <p> 01h 59m</p>
+
+                        </div>
+
+                        <h2 class="text-2xl mb-10"> Motion Graphics: Creates a Nice Typography Animation</h2>
+                        <div class="flex justify-between">
+                            <p>Rs.499</p>
+                            <button class="flex items-center gap-4">
+                                <img src="./assets/cart.png" alt="" />
+                                <span>Add to cart </span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <img src="assets/Mask group (1).png" alt="" />
+                    <div class="content">
+
+                        <div class="flex  justify-between mb-10">
+
+                            <p>9575 Students</p>
+                            <p> 01h 59m</p>
+
+                        </div>
+
+                        <h2 class="text-2xl mb-10"> Advance PHP knowledge with JS to make smart web</h2>
+                        <div class="flex justify-between">
+                            <p>Rs.499</p>
+                            <button class="flex items-center gap-4">
+                                <img src="./assets/cart.png" alt="" />
+                                <span>Add to cart </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <img src="assets/Mask group (2).png" alt="" />
+                    <div class="content">
+
+                        <div class="flex justify-between mb-10">
+
+                            <p>2957 Students</p>
+                            <p> 02h 49m</p>
+
+                        </div>
+
+                        <h2 class="text-2xl mb-10"> Education Software and PHP and JS System Script</h2>
+                        <div class="flex justify-between">
+                            <p>Rs.499</p>
+                            <button class="flex items-center gap-4 gap-y-4">
+                                <img src="./assets/cart.png" alt="" />
+                                <span>Add to cart </span>
+                            </button>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="product_card">
+                    <img src="assets/Mask group (3).png" alt="" />
+                    <div class="content">
+
+                        <div class="flex justify-between mb-10">
+
+                            <p>5457 Students</p>
+                            <p> 01h 49m</p>
+
+                        </div>
+
+                        <h2 class="text-2xl mb-10">The Complete Financial Analyst Training & Investing
+                        </h2>
+                        <div class="flex   justify-between">
+                            <p>Rs.499</p>
+                            <button class="flex items-center gap-4">
+                                <img src="./assets/cart.png" alt="" />
+                                <span>Add to cart </span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <img src="assets/Mask group (4).png" alt="" />
+                    <div class="content">
+
+                        <div class="flex justify-between mb-10">
+
+                            <p>595 Students</p>
+                            <p> 01h 49m</p>
+
+                        </div>
+
+                        <h2 class="text-2xl  mb-10">Marketing 2023:Complete Guide to Instagram Growth</h2>
+                        <div class="flex justify-between">
+                            <p>Rs.499</p>
+                            <button class="flex items-center gap-4">
+                                <img src="./assets/cart.png" alt="" />
+                                <span>Add to cart </span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <img src="assets/Mask group (5).png" alt="" />
+                    <div class="content">
+
+                        <div class="flex justify-between mb-10">
+
+                            <p>458 Students</p>
+                            <p> 03h 00m</p>
+
+                        </div>
+
+                        <h2 class="text-2xl mb-10"> Learn 3D Modelling and Design for Beginners</h2>
+                        <div class="flex justify-between">
+                            <p>Rs.499</p>
+                            <button class="flex items-center gap-4">
+                                <img src="./assets/cart.png" alt="" />
+                                <span>Add to cart </span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center justify-center items-center flex w-full  ">
+            <div class=" explore_btn  flex  btn btn_2 gradient_bg justify-center items-center flex">
+
+                <button>Explore courses</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="main_section">
+        <div class="course_container  ">
+            <h1 class="text-center text-5xl mb-10 w-full">Why <span>learn</span> with our courses?</h1>
+            <p class="text-center text-2xl mb-50 w-full">We are providing the best courses and top classes. And
+                extradinery
+                placement
+                training....
+            </p>
+            <div class="grid grid-cols-3  sm:grid grid-cols-1 md:grid grid-cols-2 gap-8  card_container">
+                <div class="course_card  ">
+                    <img class="mb-10" src="./assets/Icon (2).png" alt="" />
+                    <p class="mb-10">01.Learn</p>
+                    <p class="mb-10">Learn continually.There is always "one more thing" to learn.</p>
+                </div>
+                <div class="course_card ">
+                    <img class="mb-10" src="./assets/Icon (3).png" alt="" />
+                    <p class="mb-10">02.Graduate</p>
+                    <p class="mb-10">Be bold,be courageous, be your best.</p>
+                </div>
+                <div class="course_card ">
+                    <img class="mb-10" src="./assets/Icon (4).png" alt="" />
+                    <p class="mb-10">03.Work</p>
+                    <p class="mb-10">Great companies are built in the office, with hard work put in by team.</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="categories_section">
+        <h1 class="text-5xl text-center mb-10 ">Top Categories</h1>
+        <p class="text-center text-md mb-100">100+ online course list designs</p>
+        <div class="categories_container mb-30">
+            <div class="grid grid-cols-6  sm:grid grid-cols-2 md:grid grid-cols-3gap-2 width-auto">
+                <div class="categories_card">
+                    <img class="mb-10 flex justify-center items-center p-x-30" src="assets/div.features-box-image.png"
+                        alt="" />
+                    <div class="content">
+                        <h3 class="mb-10 text-center">Digital Marketing</h3>
+                        <p class="mb-10 text-center">25 Courses</p>
+                    </div>`
+                </div>
+                <div class="categories_card">
+                    <img class="mb-10 flex justify-center items-center p-x-30"
+                        src="assets/div.features-box-image (1).png" alt="" />
+                    <div class="content">
+                        <h3 class="mb-10 text-center">Web Development</h3>
+                        <p class="mb-10 text-center">16 Courses</p>
+                    </div>`
+                </div>
+                <div class="categories_card">
+                    <img class="mb-10 flex justify-center items-center p-x-30"
+                        src="assets/div.features-box-image (2).png" alt="" />
+                    <div class="content">
+                        <h3 class="mb-10 text-center">Art & Humanities</h3>
+                        <p class="mb-10 text-center">76 Courses</p>
+                    </div>`
+                </div>
+                <div class="categories_card">
+                    <img class="mb-10 flex justify-center items-center p-x-30"
+                        src="assets/div.features-box-image (3).png" alt="" />
+                    <div class="content">
+                        <h3 class="mb-10 text-center">Personal Development</h3>
+                        <p class="mb-10 text-center">22 Courses</p>
+                    </div>`
+                </div>
+                <div class="categories_card">
+                    <img class="mb-10 flex justify-center items-center p-x-30"
+                        src="assets/div.features-box-image (4).png" alt="" />
+                    <div class="content">
+                        <h3 class="mb-10 text-center">IT & Software</h3>
+                        <p class="mb-10 text-center">110 Courses</p>
+                    </div>`
+                </div>
+                <div class="categories_card">
+                    <img class="mb-10  p-x-30" src="assets/div.features-box-image (5).png" alt="" />
+                    <div class="content">
+                        <h3 class="mb-10  ">Graphic Design</h3>
+                        <p class="mb-10 ">25 Courses</p>
+                    </div>`
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" main_section flex justify-center items-center p-x-30">
+
+        <div class="subscribe_section flex justify-center items-center relative ">
+            <div class="sub_section">
+                <h1 class="mb-10 text-center text-5xl">Subscribe for Get Update</br> Every New Courses</h1>
+                <p class="mb-10 text-center text-2xl">20k+ students daily learn with Eduvi. Subscribe for new courses.
+                <div class="flex justify-center items-center">
+                    <div class="flex text-center justify-center items-center input_box">
+                        <input class="w-2/3" placeholder=" enter your mail" />
+                        <button class=" w-1/3 btn">Subscribe</button>
+                        <div>
+                            <img class="absolute left-20 top-10" src="./assets/Ellipse1.png " alt="" />
+                            <img class="absolute left-20 top-44" src="./assets/Ellipse2.png" alt="" />
+                            <img class="absolute [right-27px] bottom-44" src="./assets/Ellipse2.png" alt="" />
+                            <img class="absolute left-20 bottom-10" src="./assets/Ellipse3.png" alt="" />
+                            <img class="absolute right-20 top-10" src="./assets/Ellipse4.png" alt="" />
+                            <img class=" absolute right-20 bottom-10" src="./assets/Ellipse5.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video_section">
+        <div class="flex items-center justify-center">
+            <img class="relative" src="./assets/Rectangle 8691.png" alt="" />
+            <img class=" absolute -[left-90px]" src="./assets/Ellipse 106.png" alt="" />
+            <img class="absolute -[left-90px]" src="./assets/Polygon 2.png" alt="" />
+
+        </div>
+    </section>
+    <section class="testimonial_section relative">
+        <div class="sub_section">
+            <h1 class="text-center w-full text-5xl mb-10"> Testimonials</h1>
+            <p class="text-center w-full text-2xl mb-60">What our students say about us</p>
+            <div class="flex">
+                <div class="testimonial_card relative">
+                    <img class="flex  mb-10 absolute -top-12 right-[250px]" src="./assets/th (1) 4.png" alt="" />
+                    <p class="mb-10">Such an amazing trainer and easily understand the entire syllabus, and the guidence
+                        will be super
+                        and good to the way of explaining</p>
+                    <div class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5 text-yellow-400">
+                            <path fill-rule="evenodd"
+                                d="M10 3.717l2.542 7.626 8.52-.927-6.068 6.456 1.488 8.411-7.53-3.957-7.53 3.957 1.489-8.411-6.068-6.456 8.519.927L10 3.717z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5 text-yellow-400">
+                            <path fill-rule="evenodd"
+                                d="M10 3.717l2.542 7.626 8.52-.927-6.068 6.456 1.488 8.411-7.53-3.957-7.53 3.957 1.489-8.411-6.068-6.456 8.519.927L10 3.717z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5 text-yellow-400">
+                            <path fill-rule="evenodd"
+                                d="M10 3.717l2.542 7.626 8.52-.927-6.068 6.456 1.488 8.411-7.53-3.957-7.53 3.957 1.489-8.411-6.068-6.456 8.519.927L10 3.717z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5 text-yellow-400">
+                            <path fill-rule="evenodd"
+                                d="M10 3.717l2.542 7.626 8.52-.927-6.068 6.456 1.488 8.411-7.53-3.957-7.53 3.957 1.489-8.411-6.068-6.456 8.519.927L10 3.717z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                            stroke-width="2" class="w-5 h-5 text-gray-300">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10 3.717l2.542 7.626 8.52-.927-6.068 6.456 1.488 8.411-7.53-3.957-7.53 3.957 1.489-8.411-6.068-6.456 8.519.927L10 3.717z" />
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="testimonial_card relative absolute -left-20 -top-20">
+                    <img class="mb-40 absolute -top-12 right-[250px]" src="./assets/th (1) 5.png" alt="" />
+                    <p class="mb-10 mt">Such an amazing trainer and easily understand the entire syllabus, and the
+                        guidence
+                        will be super
+                        and
+                        good to the way of explaining</p>
+                    <div class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5 text-yellow-400">
+                            <path fill-rule="evenodd"
+                                d="M10 3.717l2.542 7.626 8.52-.927-6.068 6.456 1.488 8.411-7.53-3.957-7.53 3.957 1.489-8.411-6.068-6.456 8.519.927L10 3.717z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5 text-yellow-400">
+                            <path fill-rule="evenodd"
+                                d="M10 3.717l2.542 7.626 8.52-.927-6.068 6.456 1.488 8.411-7.53-3.957-7.53 3.957 1.489-8.411-6.068-6.456 8.519.927L10 3.717z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5 text-yellow-400">
+                            <path fill-rule="evenodd"
+                                d="M10 3.717l2.542 7.626 8.52-.927-6.068 6.456 1.488 8.411-7.53-3.957-7.53 3.957 1.489-8.411-6.068-6.456 8.519.927L10 3.717z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5 text-yellow-400">
+                            <path fill-rule="evenodd"
+                                d="M10 3.717l2.542 7.626 8.52-.927-6.068 6.456 1.488 8.411-7.53-3.957-7.53 3.957 1.489-8.411-6.068-6.456 8.519.927L10 3.717z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                            stroke-width="2" class="w-5 h-5 text-gray-300">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10 3.717l2.542 7.626 8.52-.927-6.068 6.456 1.488 8.411-7.53-3.957-7.53 3.957 1.489-8.411-6.068-6.456 8.519.927L10 3.717z" />
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="testimonial_card relative absolute -left-[140px]">
+                    <img class="mb-10 absolute -top-12 right-[250px]" src="./assets/th (1) 6.png" alt="" />
+                    <p class="mb-10">Such an amazing trainer and easily understand the entire syllabus, and the guidence
+                        will be super
+                        and
+                        good to the way of explaining</p>
+                    <div class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5 text-yellow-400">
+                            <path fill-rule="evenodd"
+                                d="M10 3.717l2.542 7.626 8.52-.927-6.068 6.456 1.488 8.411-7.53-3.957-7.53 3.957 1.489-8.411-6.068-6.456 8.519.927L10 3.717z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5 text-yellow-400">
+                            <path fill-rule="evenodd"
+                                d="M10 3.717l2.542 7.626 8.52-.927-6.068 6.456 1.488 8.411-7.53-3.957-7.53 3.957 1.489-8.411-6.068-6.456 8.519.927L10 3.717z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5 text-yellow-400">
+                            <path fill-rule="evenodd"
+                                d="M10 3.717l2.542 7.626 8.52-.927-6.068 6.456 1.488 8.411-7.53-3.957-7.53 3.957 1.489-8.411-6.068-6.456 8.519.927L10 3.717z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5 text-yellow-400">
+                            <path fill-rule="evenodd"
+                                d="M10 3.717l2.542 7.626 8.52-.927-6.068 6.456 1.488 8.411-7.53-3.957-7.53 3.957 1.489-8.411-6.068-6.456 8.519.927L10 3.717z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                            stroke-width="2" class="w-5 h-5 text-gray-300">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10 3.717l2.542 7.626 8.52-.927-6.068 6.456 1.488 8.411-7.53-3.957-7.53 3.957 1.489-8.411-6.068-6.456 8.519.927L10 3.717z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer_section">
+        <div class="top_section grid grid-cols-5 gap-4">
+            <div class="connect_section ">
+                <h1 class="text-3xl mb-10">Connect</h1>
+                <img class="mb-10" src="./assets/logo.png" alt="" />
+                <p class="mb-10 ">Sri Jaganath Nivas,8-1-164/345/a/1,Pragati Colony,Mailardevpally,Nawab Saheb
+                    Kunto.Hyd
+                    5000005</p>
+            </div>
+            <div class="class_section">
+                <h1 class="text-4xl mb-10">Classes</h1>
+                <p class="mb-5"> Classroom courses</p>
+                <p class="mb-5"> Virtual Classroom courses</p>
+                <p class="mb-5"> E-learning courses</p>
+                <p class="mb-5"> Video courses</p>
+                <p class="mb-5"> Online courses</p>
+
+            </div>
+            <div class="community_section">
+                <h1 class="text-4xl mb-10">Community</h1>
+                <p class="mb-5"> Learners</p>
+                <p class="mb-5"> Partners</p>
+                <p class="mb-5"> Developers</p>
+                <p class="mb-5"> Transactions</p>
+                <p class="mb-5"> Blog</p>
+
+            </div>
+
+            <div class="quicklink_section">
+                <h1 class="text-4xl mb-10">Quick Links</h1>
+                <p class="mb-5">Home</p>
+                <p class="mb-5"> Professional Educators</p>
+                <p class="mb-5"> Courses</p>
+                <p class="mb-5"> Admissions</p>
+                <p class="mb-5"> Testimonials</p>
+                <p class="mb-5"> Programs</p>
+
+            </div>
+            <div class="more_section">
+                <h1 class="text-4xl mb-10">More</h1>
+                <p class="mb-5">Press</p>
+                <p class="mb-5"> Investors</p>
+                <p class="mb-5"> Terms</p>
+                <p class="mb-5"> Privacy</p>
+                <p class="mb-5"> Help</p>
+                <p class="mb-5"> Contact</p>
+
+            </div>
+        </div>
+        <div>
+            <div class="bottom_section flex justify-center items-center">
+                <img class="relative justify-center items-center" src="./assets/Ellipse 1223.png" alt="" />
+                <img src="./assets/Ellipse 1223.png" alt="" />
+                <img src="./assets/Ellipse 1223.png" alt="" />
+                <img src="./assets/Ellipse 1223.png" alt="" />
+                <img class=" absolute left-[840px]" src="./assets/Instagram.png" alt="" />
+                <img class="absolute left-[910px]" src="./assets/WhatsApp.png" alt="" />
+                <img class="absolute left-[970px]" src="./assets/Twitter.png" alt="" />
+                <img class="absolute left-[1040px]" src="./assets/YouTube.png" alt="" />
+            </div>
+            <p class="flex items-center justify-center">Copyright@2023 askmeidentity, All rights Reserved</p>
+        </div>
+    </section>
+</body>
