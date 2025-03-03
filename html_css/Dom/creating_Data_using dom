@@ -1,0 +1,180 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreatingPicture</title>
+    <style>
+
+
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- font-family: "Saira", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--header section-->
+    <header id="header" class="header_container flex">
+        <div class="w-1/3 flex items-center px-10">
+            <img class=" h-full" src="./assets/logo.png" alt="" />
+        </div>
+
+
+        <div class=" w-2/3 flex items-center justify-between">
+            <nav>
+                <ul class="flex gap-x-8">
+                    <li> Home </li>
+                    <li> About</li>
+                    <li> Courses</li>
+                    <li> Contact</li>
+
+                </ul>
+            </nav>
+
+            <div class="flex ">
+                <ul class="flex gap-x-4">
+                    <li><img src=./assets/cart.png alt="" /></li>
+                    <li><img src="./assets/person.png " alt="" /></li>
+                    <li> <img src="./assets/search.png " alt="" /></li>
+
+                </ul>
+
+            </div>
+
+            <div class="flex ">
+
+                <button class="h-full btn btn_1">Login</button>
+                <button class="h-full btn btn_2 gradient_bg"> Signup</button>
+
+
+            </div>
+        </div>
+    </header>
+
+    <!--hero section-->
+    <section id="hero" class="flex px-20 hero_section gradient_bg">
+        <div class="w-1/3 h-full flex flex-col content_container">
+            <p class="mb-5 font-thin">Successful coaches are visionaries</p>
+            <h1 class="mb-10  text-7xl">
+                Good <span>coaching</span> is good teaching & nothing else.</h1>
+
+
+            <div class="flex gap-x-8 mb-10">
+                <button class=" w-auto p-x-10 btn btn_3">View Courses</button>
+                <button class="w-auto btn btn_1 " style="color:#FFFF;">Get Free Consultation</button>
+            </div>
+
+            <div class="search_input flex gap-x-4">
+                <input class="w-2/3" placeholder="what do you want to learn today?" />
+                <button class="w-1/3 btn btn_2 gradient_bg"> search</button>
+
+            </div>
+        </div>
+        <div>
+            <div class="w-1/3 flex items-center justify-center ">
+                <div>
+                    <h4>Shyam</h4>
+                    <p>In a coaching role,you ask the questions and rely more on your staff, who became the experts to
+                        provide the information</p>
+                </div>
+
+            </div>
+            <div style="background-image:url('./assets/brunette-woman-hugging-laptop\ 1.png');"
+                class="image_container relative w-1/3 mix-blend-multiply image/">
+            </div>
+            <div class="image_blur blur-2xl"></div>
+        </div>
+
+
+    </section>
+    <!--Podcast section-->
+    <section class="gradient_bg w-full branding_section">
+        <div
+            class=" grid grid-cols-4 gap-4 sm:grid grid-cols-1 md:grid grid-cols-2 justify-center items-center px-20 h-full">
+            <img src="./assets/spodify.png" alt="'" />
+            <img src="./assets/amazon.png" alt="" />
+            <img src="./assets/cisco.png" alt="" />
+            <img src="./assets/logitechLink .png" alt="" />
+        </div>
+    </section>
+
+    <!--Featured Course section-->
+    <section class="feature_section  ">
+        <h1 class=" text-5xl text-center mb-10 ">Featured Course</h1>
+        <p class=" text-center text-md mb-100">THE FEATURE COURSES ARE WE INVENTED OUR TEACHING PART</p>
+        <div class=" product_container mb-30">
+            <div id="products-grid" class="grid grid-cols-3 gap-4">
+
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <button class="btn btn-2 gradient-bg">See more</button>
+        </div>
+    </section>
+    <script>
+        const productsGrid = document.getElementById("products-grid");
+        const data = [{
+            noOfStudentsEnrolled: 1957,
+            durationOfCourse: "1h 57mins",
+            Title: "Motion Graphics :Create a Nice Typography Animation",
+            isActive: false,
+            image: "./assets/cart.png",
+        },
+
+        {
+            noOfStudentsEnrolled: 1957,
+            durationOfCourse: "1h 57mins",
+            Title: " Advance PHP knowledge with JS to make smart web",
+            isActive: false,
+            image: "./assets/cart.png",
+        },
+        ];
+        for (let x = 0; x < data.length; x++) {
+            renderProducts(data[x]);
+        }
+
+        function renderProducts(data = {}) {
+            const div = document.createElement("div");
+            div.setAttribute("class", "product-card");
+            div.innerHTML = `<img src="{" data.image}"/>
+                < div class="content" >
+
+                        <div class="flex  justify-between mb-10">
+
+                            <p>${data.noOfStudentsEnrolled} Students</p>
+                            <p>${data.durationOfCourse}</p>
+
+                        </div>
+
+                        <h2 class="text-2xl mb-10"> ${data.title}</h2>
+                        <div class="flex justify-between items-center">
+                            <p>${data.price}</p>
+                            <button class="flex items-center gap-4">
+                                <img src="./assets/cart.png"/>
+                                <span>Add to cart </span>
+                            </button>
+                            </div>
+
+                        </div > `;
+
+            productsGrid.appendChild(div);
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizGame</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+
+</head>
+<style>
+    button:disabled{
+        background-color: gray;
+        cursor: not-allowed;
+    }
+ 
+</style>
+
+<body>
+    <main class="flex quiz-container">
+        <div class="sidebar w-20 h-screen bg-slate-200 px-2 py-2  ">
+            <ul class="flex gap-4 flex-col justify-center" id="sidebar-list">
+               
+            </ul>
+
+        </div>
+
+        <h1 class=" h-screen w-full bg-slate-50 content-container flex justify-center items-center">
+            <div class="quiz-content w-1/2">
+                <p class="text-medium mb-3 text-zinc-400"><span id="currentQuestionNo"> 1 </span> of <span id="totalQuestions"> 10</span>  questions</p>
+                <h1 id="title"class="text-5xl font-bold mb-10">What is Dom in Webdevlopment</h1>
+                <ul id="optionContainer" class="mb-5">
+                    
+                </ul>
+                <div class="flex justify-between">
+                    <button id ="back"class="w-48 h-12 border-green-500 border-2 rounded mb-5 hover:bg-green-500 ">Go
+                        Back</button>
+                    <button id="next"class="w-48 h-12 border-green-500 border-2 rounded mb-5 hover:bg-green-500 ">Go
+                        Next</button>
+                </div>
+
+            </div>
+
+    </main>
+    <script src="./quiz.js"></script>
+
+</body>
+</html>

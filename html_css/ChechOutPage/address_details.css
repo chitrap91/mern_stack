@@ -1,0 +1,155 @@
+:root {
+    --TEXT_LIGHT: #FFFFFF;
+    --TEXT_DARK: #000000;
+    --FONT_FAMILY_PRIMARY: "Popppins", sans-serif;
+    --BG_COLOR: rgb(240, 251, 254);
+    --BG-SUCCESS: rgb(107, 217, 107);
+}
+
+html, body {
+    padding: 0px;
+    margin: 0;
+    height: 100vh;
+    font-family: var(--FONT_FAMILY_PRIMARY);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+
+p {
+    margin: 0px;
+}
+
+body {
+
+    color: var(--TEXT_LIGHT);
+}
+
+.flex {
+    display: flex;
+}
+
+.justify_space_between {
+    justify-content: space-between;
+}
+
+.column-gap-10px {
+    column-gap: 10px;
+}
+
+.margin-bottom-20px {
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: var(--BG_COLOR);
+}
+
+.btn_success {
+    background-color: var(--BG-SUCCESS);
+}
+
+.text_input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+    >label {
+        margin-bottom: 5px;
+    }
+
+    >input, select {
+        height: 30px;
+        border: none;
+        background-color: var(--BG_COLOR);
+    }
+}
+
+input::placeholder {
+    color: gray;
+    padding: 10px;
+}
+
+.content_container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 100px;
+    box-sizing: border-box;
+
+    >.left_container {
+        width: 50%;
+        height: 100%;
+        color: #000000;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+
+
+
+    >.right_container {
+        background-color: var(--BG_COLOR);
+        border-radius: 2px;
+        width: 50%;
+        height: 100%;
+        color: #000000;
+        padding: 50px;
+        box-sizing: border-box;
+
+        >.cart_items_list {
+            >.list_items {
+
+                >.item_image {
+                    width: 15%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                >.item_discription {
+                    width: 70%;
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                >.item_pricing {
+                    width: 15%;
+                    padding: 0 10px;
+                    align-items: center;
+                }
+            }
+
+        }
+
+        >.calculate_price {
+            >.additional_details {
+                width: 85%;
+                padding: 0 10px;
+                box-sizing: border-box;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 20px;
+               
+            }
+            >.additional_price {
+                width: 15%;
+                align-items: center;
+                padding: 0 10px;
+                margin-top: 20px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,72 @@
+<html>
+    <head>
+            <title> position Property</title>
+    <style>
+        .board{
+            height: 500px;
+            width: 500px;
+            background-color: aqua;
+            border: 1px dashed green;
+            margin-left:100px;
+            margin-top:100px;
+            position:relative;
+        }
+        .container{
+            height: 150px;
+            width:150px;
+            border: 1px dashed red;
+            display:inline-block;
+            position:absolute;
+        }
+        .red_box{
+
+            background:red;
+            top =0px;
+            left =0px;
+
+        }
+        .green_box{
+
+           background:green;
+            left:350px;
+
+        }
+        .purple_box{
+
+            background:purple;
+            left:175px;
+            top:175px;
+
+        }
+        .orange_box{
+
+            background:orange;
+            left:0px;
+            bottom:0px;
+        }
+        
+        .blue_box{
+
+            background:blue;
+            position:absolute;
+            right:0px;
+            bottom:0px;
+
+        }
+
+    </style>
+
+    </head>
+
+    <body>
+            <h1 style = "color:brown;margin-left:150px;margin-top:125px" >POSITION PROPERTY</h1>
+            <div class = "board">
+            <div class ="container red_box"></div>
+            <div class= "container green_box"></div>
+            <div class ="container purple_box"></div>
+            <div class ="container orange_box"></div>
+            <div class ="container blue_box"></div>
+            </div>
+    </body>
+
+</html>

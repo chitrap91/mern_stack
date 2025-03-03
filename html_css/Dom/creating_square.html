@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Creating Square</title>
+    <style>
+        .square {
+            width: 40px;
+            height: 40px;
+
+
+        }
+
+        .bg-aqua {
+            background-color: aqua;
+        }
+
+        .bg-green {
+            background-color: green;
+        }
+
+
+
+        .flex {
+            display: flex;
+
+        }
+
+        .cols-gap {
+            column-gap: 10px;
+        }
+    </style>
+
+<body>
+    <div id="item-container" class="item-container flex cols-gap">
+
+    </div>
+
+    <script>
+
+        const container = document.getElementById("item-container");
+        const UserRequirement = Number(window.prompt("enter your requirement"));
+        for (let x = 0; x < UserRequirement; x++)
+            createSquare(x);
+
+        function createSquare(value) {
+            const div = document.createElement("div");
+            div.setAttribute("class", "square bg-aqua");
+            div.setAttribute("id", value);
+            attachEventListeners(div);
+            container.appendChild(div);
+
+
+        }
+        function attachEventListeners(element) {
+            element.addEventListener("click", function (event) {
+                event.target.classList.remove("bg-aqua");
+                event.target.classList.add("bg-green");
+
+
+
+
+            });
+
+        }
+
+    </script>
+</body>
+</head>

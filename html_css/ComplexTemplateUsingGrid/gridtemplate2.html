@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Grid Template</title>
+
+
+    <style>
+        .complex_layout1 {
+
+            display: grid;
+            grid-template:
+
+                "h h h" 100px
+                "nav ar ad" calc(100vh - 200px) "f f f" 100px / 1fr 3fr 1fr;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+
+        .h {
+
+            grid-area: h;
+            background-color: aqua;
+
+
+        }
+
+        .nav {
+            grid-area: nav;
+            background-color: orange;
+        }
+
+        .ar {
+
+            grid-area: ar;
+            background-color: blueviolet;
+        }
+
+        .ad {
+            grid-area: ad;
+            background-color: brown;
+        }
+
+        .f {
+            grid-area: f;
+            background-color: aquamarine
+        }
+
+
+        @media screen and (max-width:480px) {
+            .complex_layout1 {
+
+                display: grid;
+                grid-template:
+
+                    "h h h" 100px
+                    "nav nav nav " 100px "ad ad ad" 50px
+                    "ar ar ar" calc(100vh - 350px) "f f f" 100px / 1fr 1fr 1fr;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="complex_layout1">
+        <div class="h " id="h"></div>
+        <div class="nav " id="nav"></div>
+        <div class="ar " id="ar"></div>
+        <div class="ad" id="ad"></div>
+        <div class="f " id="f"></div>
+
+
+
+    </div>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>

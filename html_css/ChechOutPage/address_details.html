@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Checkout Page
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./address_details.css" />
+</head>
+
+<body>
+    <main class="content_container">
+        <div class="left_container">
+            <h1> Your Details</h1>
+            <p style="margin-bottom:20px;margin-top:10px">If you already have an account, click here to login.</p>
+            <div class="address_info">
+                <div class="flex justify_space_between column-gap-10px margin-bottom-20px">
+                    <div class="text_input">
+                        <label>First Name</label>
+                        <input type="text" placeholder=" John" />
+                    </div>
+                    <div class="text_input">
+                        <label>Last Name</label>
+                        <input type="text" placeholder=" Doe" />
+                    </div>
+                </div>
+                <div class="flex margin-bottom-20px">
+                    <div class="text_input">
+                        <label> Address</label>
+                        <input type="text" placeholder="Blvd Broken Dreams 21" />
+                    </div>
+                </div>
+                <div class="flex justify_space_between column-gap-10px margin-bottom-20px">
+                    <div class="text_input">
+                        <label>City</label>
+                        <input type="text" placeholder="San Fransico" />
+                    </div>
+                    <div class="text_input">
+                        <label>Country</label>
+                        <select>
+                            <option> Select your country</option>
+                            <option> America</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="margin-bottom-20px" ;>
+                <input type="checkbox" /><label>Ship to Billing address</label>
+            </div>
+            <div class="margin-bottom-20px" ;>
+                <button class="btn btn_success">Place order</button>
+            </div>
+        </div>
+
+
+        <div class="right_container">
+            <h1>Your Cart</h1>
+            <p style="margin-bottom:20px;margin-top:10px">If price is too hard on your eyes,<b> try changing the theme.</b> </p>
+
+            <div class="cart_items_list">
+                <div class="list_items flex">
+                    <div class="item_image">
+                        <img
+                            src="./assets/Placeholder.png"
+                            alt="" />
+                    </div>
+
+                    <div class="item_discription flex">
+                        <h4>Penny Board</h4>
+                        <p>PY908656</p>
+                    </div>
+
+                    <div class="item_pricing flex">
+                        <h5>199.00</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calculate_price flex" >
+                <p class="additional_details">Subtotal</p>
+                <h5 class="additional_price">199.00</h5>
+            </div>
+            <div class="calculate_price flex" >
+                <p class="additional_details">Shipping</p>
+                <h5 class="additional_price">19.99</h5>
+            </div>
+            <div class="calculate_price flex" >
+                <p class="additional_details">Taxes(estimate)</p>
+                <h5 class="additional_price">23.80</h5>
+            </div>
+                <hr style="margin-top: 20px;">
+            <div class="calculate_price flex" >
+              <p class="additional_details">Total</p>
+                <h3 class="additional_price">162.79</h3>
+            </div>
+        </div>
+
+
+    </main>
+
+
+</body>
+</html>

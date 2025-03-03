@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Grid Template</title>
+
+
+    <style>
+        .complex_layout {
+
+            display: grid;
+            grid-template:
+
+                "a b c d" 100px
+                "a b c d" 100px
+                "a b c d" 100px
+                "a b c d" 100px / 2fr 1fr 1fr 1fr
+        }
+
+        .a {
+
+            grid-area: a;
+            background-color: aqua;
+
+        }
+
+        .b {
+
+            grid-area: b;
+            background-color: blueviolet;
+        }
+
+        .c {
+            grid-area: c;
+            background-color: brown;
+        }
+
+        .d {
+            grid-area: d;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="complex_layout">
+        <div class="a " id="a"></div>
+        <div class="b " id="b"></div>
+        <div class="c" id="c"></div>
+        <div class="d " id="d"></div>
+
+
+    </div>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

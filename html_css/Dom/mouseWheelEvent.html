@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        MousewheelEvent
+    </title>
+
+
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+
+        .context-menu {
+            width: 100px;
+            height: 150px;
+            background-color: pink;
+            border: 10px;
+            visibility: hidden;
+            display: none;
+
+        }
+
+        .dbl-container {
+            width: 100px;
+            height: 40px;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dbl" class="dbl-container"></div>
+
+    <script>
+        const ContextMenuWidth = 100;
+
+        const contextMenu = document.createElement("div")
+        contextMenu.setAttribute("class", "context-menu")
+        document.body.appendChild(contextMenu);
+
+        document.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+
+            console.log("User made a right click");
+            console.log(e.clientX, e.clientY);
+            contextMenu.style.position = "absolute";
+
+            let totalWidth = e.clientX + ContextMenuWidth;
+            if (totalWidth < window.screen.availWidth) {
+                contextMenu.style.left = e.clientX + "px";
+                contextMenu.style.removeProperty("right");
+            } else {
+                contextMenu.style.right = (window.screen.availWidth - e.clientX) + "px";
+                contextMenu.style.removeProperty("left");
+
+            }
+            contextMenu.style.top = e.clientY + "px";
+            contextMenu.style.visibility = "visible";
+            contextMenu.style.display = "block";
+
+        })
+        document.addEventListener("click", function () {
+            contextMenu.style.display = "hidden";
+            contextMenu.style.visibility = "none";
+            contextMenu.style.left = "0";
+            contextMenu.style.top = "0";
+        })
+
+        const dblElement = document.getElementById("dbl");
+        dblElement.addEventListener("dblclick", function (e) {
+            console.log("Double clicked")
+
+        });
+
+
+    </script>
+</body>
+
+</html>
+
+</body>

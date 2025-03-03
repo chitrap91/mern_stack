@@ -1,0 +1,71 @@
+<html>
+    <head>
+
+    <title> position Property</title>
+    <style>
+        .board{
+            height: 500px;
+            width: 500px;
+            background-color: aqua;
+            border: 1px dashed green;
+            margin-left:100px;
+            margin-top:100px;
+            position:relative;
+        }
+        .box1{
+
+        height: 150px;
+        width:150px;
+        border: 1px dashed red;
+        background:grey;
+        Display:inline-block;
+        }
+
+        .box2{
+
+height: 150px;
+width:150px;
+border: 1px dashed red;
+background:grey;
+Display:inline-block;
+
+        }
+
+.box3{
+
+    height: 150px;
+    width:150px;
+    border: 1px dashed red;
+    background:grey;
+    Display:inline-block;
+
+}
+    .box4{
+
+        height: 150px;
+        width:150px;
+        border: 1px dashed red;
+        background:grey;
+        Display:inline-block;
+        
+    }
+        .box5{
+
+            height: 150px;
+            width:150px;
+            border: 1px dashed red;
+            background:grey;
+            Display:inline-block;
+        }
+
+    </style>
+
+    </head>
+
+    <body>
+    <div class = "board">
+    <div class ="box1"></div>
+    </div>
+    </body>
+
+      </html>
