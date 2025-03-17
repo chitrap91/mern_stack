@@ -14,6 +14,8 @@ const ttype = document.getElementById("transaction-type");
 const description = document.getElementById("description");
 const amount = document.getElementById("amount");
 
+let data = JSON.parse(localStorage.getItem('transactionData')) || [];
+
 transactionSummary.addEventListener("click", function (e) {
     addTransactionDetailsToTable(e.target.value)
 });
@@ -24,7 +26,7 @@ function transactionSummaryOption() {
     addTransactionDetailsToTable(selectedOption.value)
 }
 
-let data = [];
+
 
 inputForm.addEventListener("submit", function (e) {
     console.log("submit transaction")
@@ -61,10 +63,11 @@ function refreshPage() {
     const income = calculateTotalIncome(); // income = 0
     const expense = calculateTotalExpense(); // expense = 0
     const netBalance = income - expense;
-    totalIncomeEl.textContent = "Total Income \n" + income.toString();
-    totalExpenseEl.textContent = "Total Expense \n" + expense.toString();
-    netBalanceEl.textContent = "Net Balance \n" + netBalance.toString();
+    totalIncomeEl.textContent = income.toString();
+    totalExpenseEl.textContent = expense.toString();
+    netBalanceEl.textContent = netBalance.toString();
     transactionSummaryOption();
+    localStorage.setItem('transactionData', JSON.stringify(data));
 }
 
 function clearInputs() {
@@ -206,4 +209,4 @@ function handleDeleteClick(e) {
 
 
 
-// refreshPage();
+refreshPage();
