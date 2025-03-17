@@ -1,0 +1,37 @@
+html, body {
+    padding: 0px;
+    margin: 0;
+    background-color: bisque;
+}
+
+.main-section {
+    display: flex;
+
+}
+
+.container {
+    box-shadow: 0cqh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.btn1 {
+    width: 160px;
+    height: 130px;
+    background-color: azure;
+    border-radius: 15px;
+    border: 0cqb;
+    text-decoration-color: black;
+
+
+}
+
+.total-value {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border-color: black;
+
+}
