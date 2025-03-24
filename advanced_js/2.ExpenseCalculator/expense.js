@@ -8,7 +8,9 @@ const allDetails = document.getElementById("all-details");
 const incomeDetails = document.getElementById("income-details");
 const expenseDetails = document.getElementById("expense-details");
 const tableEl = document.getElementById("table");
-const transactionSummary = document.getElementById("transaction-summary");
+const allTransactionSummary = document.getElementById("all-summary");
+const incomeTransactionSummary = document.getElementById("income-summary");
+const expenseTransactionSummary = document.getElementById("expense-summary");
 const transactionId = document.getElementById("transaction-id");
 const ttype = document.getElementById("transaction-type");
 const description = document.getElementById("description");
@@ -16,7 +18,13 @@ const amount = document.getElementById("amount");
 
 let data = JSON.parse(localStorage.getItem('transactionData')) || [];
 
-transactionSummary.addEventListener("click", function (e) {
+allTransactionSummary.addEventListener("click", function (e) {
+    addTransactionDetailsToTable(e.target.value)
+});
+incomeTransactionSummary.addEventListener("click", function (e) {
+    addTransactionDetailsToTable(e.target.value)
+});
+expenseTransactionSummary.addEventListener("click", function (e) {
     addTransactionDetailsToTable(e.target.value)
 });
 
@@ -123,7 +131,7 @@ function addExpenseDetailsToTable() {
 function clearTableRows() {
 
     const rowCount = tableEl.rows.length;
-    for (let i = 1; i < rowCount; i++) {
+    for (let i = rowCount - 1; i > 0; i--) {
         tableEl.deleteRow(i);
     }
 
