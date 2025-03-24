@@ -40,6 +40,10 @@ inputForm.addEventListener("submit", function (e) {
     console.log("submit transaction")
     e.preventDefault();
     let id = data.length + 1;
+    if (ttype.value === "Select" || description.value === "" || amount.value === "" || parseFloat(amount.value) <= 0) {
+        clearInputs();
+        return
+    }
     if (transactionId.value !== "") {
         id = Number(transactionId.value) //2
     }
