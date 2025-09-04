@@ -2,303 +2,436 @@
 <html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabook</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-    <header class=" navigation_component flex">
-        <div class=" branding_section flex">
-            <img src="./Assets/chef-hat.png" alt="" />
-            <p style="font-weight:bold;">Trabook</p>
-            <img src="./assets/Vector (3).png" alt="" />
-        </div>
-        <div class="navigation_section flex">
-            <ul class="flex">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Destination</a> </li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Blog</a></li>
-            </ul>
-        </div>
-        <div class="login_details flex ">
-            <button class="login_btn flex">Login</button>
-            <button class="signup_btn">Signup</button>
-        </div>
 
-    </header>
-    <section class="hero_section flex">
-        <div class="content_section flex flex_direction justify_content">
-            <h2> Get started your exciting journey with us.</h2>
-            <p class="margin_bottom_50">A team of experienced tourism professionals will<br /> provide with you the best
-                advice and tips for
-                your</br> desire place</p>
-            <button class="discover_btn">Discover Now</button>
-        </div>
-        <div class="image_section">
-    </section>
 
-    <section class="booking_details flex">
-        <div class="booking_details_div flex">
-            <div>
+    <!-- Header Section -->
+    <div class="big-container">
+        <header class="header">
+            <div class="logo">
+                <h2>Trabook</h2>
+                <img src="./assets/ (4).png" alt="" />
+
+            </div>
+            <div class="menu-bar">
+                <div class="nav-bar">
+                    <a href="">Home </a>
+                    <a href="">About </a>
+                    <a href="">Destination </a>
+                    <a href="">Tour </a>
+                    <a href="">Blog</a>
+                </div>
+
+            </div>
+            <div class="buttons">
+                <button class="primary">Login</button>
+                <button class="secondary">Sign Up</button>
+            </div>
+        </header>
+        <!-- Hero Section -->
+        <main class="hero-main">
+            <div class="hero-sub">
+                <div class="move-center">
+                    <div class="content-section">
+                        <h1 class="heading">Get started your exciting journey</br> with us.</h1>
+                        <p class="paragraph">A team of experienced tourism professionals will provide you with the best
+                            advice
+                            and
+                            tips for your
+                            desire place.</p>
+
+                        <button class="discover-btn">Discover Now</button>
+
+
+
+
+                    </div>
+
+                </div>
+                <div class="image-section">
+                    <img src="./assets/Image (3).png" alt="" />
+
+                </div>
+
+            </div>
+        </main>
+        <!-- Exploring Things -->
+        <section class="exploring-box">
+            <div class="exploring-section flex">
                 <div>
-                    <h3>Location</h3>
+                    <div class="flex mb-10 gap-5">
+                        <h3>Location</h3>
+                        <div class="image">
+                            <img src="./assets/Vector 4855.png" alt="" />
+                        </div>
+                    </div>
+                    <p>Where are you going</p>
                 </div>
-                <p>Where are you going></p>
+
+
+
+                <div>
+                    <div class="flex mb-10 gap-5">
+                        <h3>Date</h3>
+                        <div class="image"> <img src="./assets/Vector 4855.png" alt="" /></div>
+                    </div>
+                    <p>When you will go</p>
+
+                </div>
+                <div>
+                    <div class="flex mb-10 gap-5">
+                        <h3>Guest</h3>
+
+                        <div class="image">
+                            <img src="./assets/Vector 4855.png" alt="" />
+                        </div>
+                    </div>
+                    <p>Number of guest</p>
+                </div>
+
+                <div>
+                    <button class="secondary">Explore Now</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+    <!-- Things you need to do section -->
+    <section class="todo-container">
+        <div class="subtodo-container">
+            <div>
+                <h1 class="mb-10">Things you need to do</h1>
+                <p class="paragraph todo-paragraph">We ensure that you'll embark on a perfectly planned, </br>safe
+                    vacation ata price you can afford.</p>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="./assets/Group (3).png" alt="" />
+                    <h3>Sign Up</h3>
+                    <p>Completes all the work associated with planning and processing</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/Group (3) copy.png" alt="" />
+                    <h3>Worth of Money</h3>
+                    <p>After successful access then book from exclusive deals & pricing</p>
+                </div>
+                <div class="card">
+                    <img class="" src="./assets/Group (3) copy 2.png" alt="" />
+                    <h3 class="">Exciting Travel</h3>
+                    <p>Start and explore a wide range of exciting travel experience</p>
+                </div>
 
             </div>
-
-            <div>
-                <h3>Date</h3>
-                <p>When you will go</p>
-            </div>
-            <div>
-                <h3>Guest</h3>
-                <p>Number of guest</p>
-            </div>
-            <button class="explore_now">Explore Now</button>
         </div>
 
     </section>
-    <section class="benefits_details flex">
-        <div class="things_todo flex">
-            <h2>Things you need to do </h2>
-            <div class="benefits flex">
-                <div class="travel_benefit">
-                    <img src="./assets/Group (1).png" alt="" />
-                    <h4>Sign Up</h4>
-                    <p>Complete all the work associated </br>with planning and processing.</p>
-                </div>
-
-                <div class="travel_benefit">
-                    <img src="./assets/Group (2).png" alt="" />
-                    <h4>Worth of Money</h4>
-                    <p>After succesful access then book</br> from exclusive deals and pricing.</p>
-                </div>
-
-                <div class="travel_benefit">
-                    <img src="./assets/Vector (1).png" alt="" />
-                    <h4>Exciting Travel</h4>
-                    <p>Start and explore a wide range of </br> exciting travel experience.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container">
-        <div class="main_division">
-            <div class="sub_division">
-                <div class="text_division flex">
-                    <h2>Exclusive deals & discounts</h2>
-                    <p>Discover our fantastic early booking discounts & start planning your journey</p>
-                </div>
-                <div class="image_division flex">
-
+    <!-- Exclusive Deals and Discovents Section -->
+    <section class="deals-container">
+        <div class="main-division">
+            <div class="sub-division">
+                <div class="text-division">
                     <div>
-                        <img src="./assets/madrid_pic.png" alt="" />
-
-                        <div class="place_details flex">
-                            <p class="city-name">Madrid</p>
-                            <div class="rating flex">
-                                <div class="star-rating">★</div>
-                                <p class="number-rating">4.8</p>
-                            </div>
-                        </div>
-
-                        <div class="location_price_details flex">
-                            <div class="location flex">
-                                <p class="location_name">Spain</p>
-                            </div>
-                            <div class="price_details flex">
-                                <p class="original_price">$950</p>
-                                <p class="sale_price">$850</p>
-                            </div>
-                        </div>
+                        <h2 class="text-division-h1">Exclusive deals & discounts</h2>
+                        <p class=" text-division-p">Discover our fantastic early booking discounts </br>& start planning
+                            your
+                            journey</p>
                     </div>
-                    <div>
-                        <img src="./assets/Hover effect (1).png" alt="" />
-                        <div class="place_details flex">
-                            <p class="city-name">Firenze</p>
-                            <div class="rating flex">
-                                <div class="star-rating">★</div>
-                                <p class="number-rating">4.5</p>
+                    <div class="image-division flex ">
+                        <div class="border-details">
+                            <div>
+                                <img class="mb-10" src="./assets/hotel1.png" alt="" />
+                            </div>
+                            <div class="place-details flex">
+                                <p class="city-name">Madrid</p>
+                                <div class="rating flex">
+                                    <div class="star-rating">*</div>
+                                    <p class="number-rating">4.8</p>
+                                </div>
+                                <div class=""></div>
+
+                            </div>
+
+                            <div class="location-price-details flex">
+                                <div class="location flex">
+                                    <p class="city-name">Spain</p>
+                                </div>
+                                <div class=" price-details flex">
+                                    <p class="original-price">$950</p>
+                                    <p class="sale-price">$850</p>
+
+                                </div>
+
+
                             </div>
                         </div>
-                        <div class="location_price_details flex">
-                            <div class="location flex">
-                                <p class="location_name">Italy</p>
+                        <div class="border-details">
+                            <div>
+                                <img class="mb-10" src="./assets/hotel1.png" alt="" />
                             </div>
-                            <div class="price_details flex">
-                                <p class="original_price">$850</p>
-                                <p class="sale_price">$750</p>
+                            <div class="place-details flex">
+                                <p class="city-name">Firenze</p>
+                                <div class="rating flex">
+                                    <div class="star-rating">*</div>
+                                    <p class="number-rating">4.5</p>
+                                </div>
+                                <div class=""></div>
+
+                            </div>
+
+                            <div class="location-price-details flex">
+                                <div class="location flex">
+                                    <p class="city-name">Italy</p>
+                                </div>
+                                <div class=" price-details flex">
+                                    <p class="original-price">$850</p>
+                                    <p class="sale-price">$750</p>
+
+                                </div>
+
+
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <img src="./assets/paris_pic.png" alt="" />
-                        <div>
-                            <div class="place_details flex">
+                        <div class="border-details">
+                            <div>
+                                <img class="mb-10" src="./assets/hotel2.png" alt="" />
+                            </div>
+                            <div class="place-details flex">
                                 <p class="city-name">Paris</p>
                                 <div class="rating flex">
-                                    <div class="star-rating">★</div>
+                                    <div class="star-rating">*</div>
                                     <p class="number-rating">4.4</p>
                                 </div>
+                                <div class=""></div>
+
                             </div>
-                            <div class="location_price_details flex">
+
+                            <div class="location-price-details flex">
                                 <div class="location flex">
-                                    <p class="location_name">France</p>
+                                    <p class="city-name">France</p>
                                 </div>
-                                <div class="price_details flex">
-                                    <p class="original_price">$699</p>
-                                    <p class="sale_price">$599</p>
+                                <div class=" price-details flex">
+                                    <p class="original-price">$699</p>
+                                    <p class="sale-price">$599</p>
+
                                 </div>
+
+
+                            </div>
+                        </div>
+                        <div class="border-details">
+                            <div>
+                                <img class="mb-10" src="./assets/hotel4.png" alt="" />
+                            </div>
+                            <div class="place-details flex">
+                                <p class="city-name">London</p>
+                                <div class="rating flex">
+                                    <div class="star-rating">*</div>
+                                    <p class="number-rating">4.8</p>
+                                </div>
+                                <div class=""></div>
+
+                            </div>
+
+                            <div class="location-price-details flex">
+                                <div class="location flex">
+                                    <p class="city-name">UK</p>
+                                </div>
+                                <div class=" price-details flex">
+                                    <p class="original-price">$850</p>
+                                    <p class="sale-price">$850</p>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="pagination-container">
+                        <div class="pagination-subcontainer flex">
+                            <div class="left-navigation">
+                                <button>←</button>
+                            </div>
+                            <div class="right-navigation">
+                                <button>→</button>
                             </div>
                         </div>
                     </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+
+
+    </section>
+
+    <main class="plan-container">
+        <div class="main-plan">
+            <div class="sub-plan">
+                <div class="text-box">
                     <div>
-                        <img src="./assets/london_pic.png" alt="" />
-                        <div class="place_details flex">
-                            <p class="city-name">London</p>
-                            <div class="rating flex">
-                                <div class="star-rating">★</div>
-                                <p class="number-rating">4.4</p>
+                        <h1 class="text-division-h2">Best vacation plan</h1>
+                        <p class="text-division-p margin-bottom">Plan your perfect vacation with our travel agency.
+                            Choose
+                            </br>among
+                            hundreds of all-inclusive
+                            offers!</p>
+                        <div class="image-box  ">
+                            <div class="card-image">
+                                <img src="./assets/Image (10) copy.png" alt="" />
+                                <div class="place-details flex">
+                                    <p class="city-name">Rome,Italy</p>
+
+                                    <p class="sale-price" style="color:grey;">$5,42k</p>
+                                </div>
+                                <div class="location-price-details flex">
+                                    <div class="flex">
+
+                                        <p class="discount-price padding">10 days Trip</p>
+
+                                    </div>
+                                    <div class="rating flex justify-between">
+                                        <div class="star-rating">*</div>
+                                        <p class="number-rating">4.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-image">
+                                <img src="./assets/london_uk.png" alt="" />
+                                <div class="place-details flex">
+                                    <p class="city-name">London,UK</p>
+
+                                    <p class="sale-price" style="color:grey;">$2,42k</p>
+                                </div>
+                                <div class="location-price-details flex">
+                                    <div class="flex">
+
+                                        <p class="discount-price padding">07 days Trip</p>
+
+                                    </div>
+                                    <div class="rating flex justify-between">
+                                        <div class="star-rating">*</div>
+                                        <p class="number-rating">4.7</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-image">
+                                <img src="./assets/osaka_japan.png" alt="" />
+                                <div class="place-details flex">
+                                    <p class="city-name">Osaka,Japan</p>
+
+                                    <p class="sale-price" style="color:grey;">$5,42k</p>
+                                </div>
+                                <div class="location-price-details flex">
+                                    <div class="flex">
+
+                                        <p class="discount-price padding">10 days Trip</p>
+
+                                    </div>
+                                    <div class="rating flex justify-between">
+                                        <div class="star-rating">*</div>
+                                        <p class="number-rating">4.8</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="location_price_details flex">
-                            <div class="location flex">
-                                <p class="location_name">UK</p>
-                            </div>
-                            <div class="price_details flex">
-                                <p class="original_price">$950</p>
-                                <p class="sale_price">$850</p>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="pagination_container flex">
-                    <div class="left_navigation">
-                        <button>←</button>
-                    </div>
-                    <div class="right_navigation">
-                        <button>→</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section class="vacation_plan">
-        <div class="vacation_container flex">
-            <div class="word_container flex ">
-                <h2>Best vacation plan</h2>
-                <p>Plan your perfect vacation with our travel agency.Choose</br> among hundreds of all-inclusive offers!
-                </p>
-            </div>
-            <div class="image_container flex">
-                <div>
-                    <img src="./assets/sunset.png" alt="" />
-                    <div class="place_details flex">
-                        <p class="city-name">London</p>
-                        <div class="rating flex">
-                            <div class="star-rating">★</div>
-                            <p class="number-rating">4.4</p>
-                        </div>
-                    </div>
-                    <div class="location_price_details flex">
-                        <div class="location flex">
-                            <p class="location_name">ROME</p>
-                        </div>
-                        <div class="price_details flex">
-                            <p class="original_price">$950</p>
-                            <p class="sale_price">$850</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <img src="./assets/sand.png" alt="" />
-                    <div class="place_details flex">
-                        <p class="city-name">London</p>
-                        <div class="rating flex">
-                            <div class="star-rating">★</div>
-                            <p class="number-rating">4.4</p>
-                        </div>
-                    </div>
-                    <div class="location_price_details flex">
-                        <div class="location flex">
-                            <p class="location_name">LONDON</p>
-                        </div>
-                        <div class="price_details flex">
-                            <p class="original_price">$950</p>
-                            <p class="sale_price">$850</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <img src="./assets/beach.png" alt="" />
-                    <div class="place_details flex">
-                        <p class="city-name">London</p>
-                        <div class="rating flex">
-                            <div class="star-rating">★</div>
-                            <p class="number-rating">4.4</p>
-                        </div>
-                    </div>
-                    <div class="location_price_details flex">
-                        <div class="location flex">
-                            <p class="location_name">OSAKA</p>
-                        </div>
-                        <div class="price_details flex">
-                            <p class="original_price">$950</p>
-                            <p class="sale_price">$850</p>
-                        </div>
-                    </div>
+
+
                 </div>
             </div>
 
         </div>
         </div>
+        </div>
+        </div>
+    </main>
 
-    </section>
+
+
+
+
 
     <section class="testimonial_container flex">
         <div class="testimonial_sub_container">
-            <div class="word_container">
-
-                <h2> What people say about us.</h2>
-                <p class="margin_bottom_30">
-                    Our client send us bunch of smiles with our services and we love them.
+            <!-- Left content section (Text and navigation) -->
+            <div class="testimonial-left-section">
+                <h1 class="main-heading">
+                    What people say <br>
+                    <span class="orange-text">about us.</span>
+                </h1>
+                <p class="subtitle">
+                    Our clients send us a bunch of smilies with our services and we love them.
                 </p>
-                <div class="pagination_container flex margin_bottom_30">
-                    <div class="left_navigation">
-                        <button>←</button>
+
+                <!-- Navigation arrows -->
+                <div class="navigation">
+                    <!-- Left arrow -->
+                    <div class="nav-button">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                        </svg>
                     </div>
-                    <div class="right_navigation">
-                        <button>→</button>
+                    <!-- Right arrow -->
+                    <div class="nav-button active">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
                     </div>
                 </div>
             </div>
 
-            <div class="image_container">
-                <img src="./assets/Image (15).png" alt="" />
-                <div class=content>
-                    <p> “On the Windows talking painted pasture yet its express parties use.
-                        Sure last upon he same as
-                        knew
-                        next. Of believed or diverted no.”</p>
-                    </br>
-                    </br>
-                    <p>Mike taylor</p>
-                    <p>Lahore, Pakistan</p>
+            <div class="testimonial-right-section">
+                <!-- Active Testimonial Card -->
+                <div class="testimonial-card">
+                    <img src="./assets/testimonial_image1.png" alt="Mike Taylor" class="avatar">
+                    <blockquote class="quote">
+                        "On the Windows talking painted pasture yet its express parties use. Sure last upon he
+                        same as
+                        knew next. Of believed or diverted no."
+                    </blockquote>
+                    <div class="author">
+                        <p class="author-name">Mike Taylor</p>
+                        <p class="author-location">Lahore, Pakistan</p>
+                    </div>
+                </div>
 
+                <!-- Inactive Testimonial Card (Styled to be in the background) -->
+                <div class="inactive-card">
+                    <div class="author-info">
+                        <!-- <img src="" class="avatar">
+                        <blockquote class="quote">
 
+                        </blockquote> -->
+                        <div class="author">
+                            <p class="author-name-faded">Chris Thomas</p>
+                            <p class="author-title-faded">CEO of Red Button</p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -311,103 +444,105 @@
         <div class="update_information ">
             <h2 class="flex">Get update with latest blog</h2>
 
-            <div class=" sub_division flex">
+            <div class="sub_division flex">
 
                 <div>
 
-                    <img src="./assets/Image (16).png" alt="" />
+                    <img src="./assets/latest_blog1.png" alt="" />
                     <p> The Amazing Difference a </br>year of Travelling</p>
                     </br>
-                    <p>July 27,2021</p>
+                    <p style="color:grey;">July 27,2021</p>
                 </div>
                 <div>
 
-                    <img src="./assets/Image (17).png" alt="" />
+                    <img src="./assets/latest_blog2.png" alt="" />
                     <p> Travel fair enough,you </br>meet yourself.</p>
                     </br>
-                    <p>July 27,2021</p>
+                    <p style="color:grey;">July 27,2021</p>
                 </div>
                 <div>
 
-                    <img src="./assets/Image (18).png" alt="" />
+                    <img src="./assets/latest_blog3.png" alt="" />
                     <p>How to Save Money While </br>Visiting Africa</p>
                     </br>
-                    <p>July 27,2021</p>
+                    <p style="color:grey;">July 27,2021</p>
                 </div>
                 <div>
 
-                    <img src="./assets/Image (19).png" alt="" />
+                    <img src="./assets/latest_blog4.png" alt="" />
                     <p> Reflection on 5 Months of </br>Travel:time to Hang </p>
                     </br>
-                    <p>July 27,2021</p>
+                    <p style="color:grey;">July 27,2021</p>
                 </div>
 
             </div>
     </section>
 
-    <section class="content_section">
+    <div class="content_section">
         <div class="sub_section ">
 
             <h2 class="margin_bottom_30">Subscribe and Get exclusive</br> deals & offer</h2>
-            <div class="flex section">
-                <input class="mail_box" placeholder=" Enter your mail" />
-                <button>Subscripe</button>
-            </div>
-
-
-
-        </div>
-
-
-    </section>
-
-    <section class="main_section">
-
-        <div class="left_section">
-
-            <div class="logo flex">
-
-                <h3 class="margin_bottom_10"> Trabook</h3>
-                <img src="./assets/Vector (3).png" alt="" />
-            </div>
-
-            <p class="margin_bottom_30">Book your trip in a minute,get full </br>Control of much longer.</p>
-
-            <div class="flex">
-                <img class="margin_bottom_10" src="./assets/Social.png" alt="" />
-                <img src="./assets/Social (1).png" alt="" />
-                <img src="./assets/Social (2).png" alt="" />
-
-            </div>
-
-
-        </div>
-
-        <div class="right_section flex ">
-
-            <div>
-                <h2 class="margin_bottom_10"> Company</h2>
-                <p class="margin_bottom_10">About</p>
-                <p class="margin_bottom_10">Careers</p>
-                <p class="margin_bottom_10">Logistic</p>
-                <p class="margin_bottom_10">Privacy & Policy</p>
-            </div>
-
-            <div>
-                <h2 class="margin_bottom_10"> Contact</h2>
-                <p class="margin_bottom_10">Help/FAQ</p>
-                <p class="margin_bottom_10">Press</p>
-                <p class="margin_bottom_10">Affilates</p>
-            </div>
-            <div>
-                <h2 class="margin_bottom_10"> More</h2>
-                <p class="margin_bottom_10">Press Center</p>
-                <p class="margin_bottom_10"> Our Blog</p>
-                <p class="margin_bottom_10">Low fare tips</p>
+            <div class="section">
+                <div class="email_section">
+                    <input class="mail_box" placeholder="Enter your mail" />
+                    <button>Subscribe</button>
+                </div>
             </div>
         </div>
+        <section class="main_section">
+            <div class="left_section">
+                <div class="logo flex">
+                    <h3 class="margin_bottom_10">Trabook</h3>
+                    <img src="./assets/trabook_footer.png" alt="" />
+                </div>
 
-    </section>
+                <p class="margin_bottom_30">Book your trip in a minute,get full </br>Control of much longer.</p>
+
+                <div class="flex">
+                    <img src="./assets/facebook.png" alt="" />
+                    <img src="./assets/insta.png" alt="" />
+                    <img src="./assets/twiiter.png" alt="" />
+
+                </div>
+
+
+            </div>
+
+            <div class="right_section flex ">
+
+                <div class="company">
+                    <h2>Company</h2>
+                    <span>About</span>
+                    <span>Careers</span>
+                    <span>Logistic</span>
+                    <span>Privacy & Policy</span>
+
+                </div>
+
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <span>Help/FAQ</span>
+                    <span>Press</span>
+                    <span>Affilates</span>
+                </div>
+                <div class="more">
+                    <h2>More</h2>
+                    <span>Press Center</span>
+                    <span> Our Blog</span>
+                    <span>Low fare tips</span>
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <div class="copyright">
+            <p>Copyright, Trabook 2022. All rights reserved.</p>
+            <p>Terms & Conditions</p>
+        </div>
+
+    </div>
+
+
 </body>
 
 </html>
